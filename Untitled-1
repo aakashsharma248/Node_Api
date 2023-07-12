@@ -1,0 +1,21 @@
+1. key value pairs passed under the params section of postman will be treated as the query parameters, we can get 
+that using "req.query" keyword.
+
+2. we can pass the data with "GET" request as well but as this is not the good practice so we want to send the data
+using the "GET" request then we can pass it throigh the "params" and we can get that using "req.query" keyword.
+
+3. We are using "router" instead of "app" because it has one advantage that we can add prefix for router only
+
+4. dotenv package is used to use the env variable
+
+5. If we want to login just after the register then we need to setup the cookie in the register function itself
+
+6. If for a particular field we wrote "select: false" in its schema then it means it will not fetch the data
+  of that field in whole object automatically instead we need to fetch it manually
+
+7. cookieParser is used to access the cookie
+
+8. Always use try catch block while using async await 
+
+9 Backend runs on different url and frontend runs on different url so to make it compaible we have to use the middleware
+named as "Cors" by passing the appropriate headers 
